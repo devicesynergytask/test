@@ -15,4 +15,7 @@ public class Testapi {
     public void showToast2() {
         Toast.makeText(mContext, "test3333333333", Toast.LENGTH_SHORT).show();
     }
+    public void showToast3() {
+        Toast.makeText(mContext, "test showtoast3", Toast.LENGTH_SHORT).show();
+    }
 }
