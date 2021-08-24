@@ -1,7 +1,8 @@
 package com.test.mylibrary;
 
 import android.content.Context;
-import android.widget.Toast;
+
+import com.test.myaar.Aarapi;
 
 public class Testapi {
     Context mContext;
@@ -10,18 +11,7 @@ public class Testapi {
         mContext = context;
     }
     public void showToast() {
-        Toast.makeText(mContext, "test", Toast.LENGTH_SHORT).show();
-    }
-    public void showToast2() {
-        Toast.makeText(mContext, "test3333333333", Toast.LENGTH_SHORT).show();
-    }
-    public void showToast3() {
-        Toast.makeText(mContext, "test showtoast3", Toast.LENGTH_SHORT).show();
-    }
-    public void setproperty() {
-        Toast.makeText(mContext, "setproperty@@@@@@@@@", Toast.LENGTH_SHORT).show();
-    }
-    public void showDialog() {
-        Toast.makeText(mContext, "showDialog", Toast.LENGTH_SHORT).show();
+        Aarapi aarapi = new Aarapi(mContext);
+        aarapi.showToast();
     }
 }
