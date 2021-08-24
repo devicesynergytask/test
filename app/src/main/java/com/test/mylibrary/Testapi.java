@@ -1,8 +1,8 @@
 package com.test.mylibrary;
 
 import android.content.Context;
+import android.widget.Toast;
 
-import com.test.myaar.Aarapi;
 
 public class Testapi {
     Context mContext;
@@ -11,7 +11,6 @@ public class Testapi {
         mContext = context;
     }
     public void showToast() {
-        Aarapi aarapi = new Aarapi(mContext);
-        aarapi.showToast();
+        Toast.makeText(mContext, "Testapi call!!!", Toast.LENGTH_SHORT).show();
     }
 }
