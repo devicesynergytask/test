@@ -21,4 +21,7 @@ public class Testapi {
     public void setproperty() {
         Toast.makeText(mContext, "setproperty@@@@@@@@@", Toast.LENGTH_SHORT).show();
     }
+    public void showDialog() {
+        Toast.makeText(mContext, "showDialog", Toast.LENGTH_SHORT).show();
+    }
 }
